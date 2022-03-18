@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/Pics/tetrisLogo.webp" />
+    <title>Tetris 0.2</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title" id="title">Tetris </h1>
+      <p class="scoreboard" id="scoreboard">Score: 0</p>
+      <div class="wrapper">
+      <a href="#instructionPopup">Instuctions</a>
+    </div>
+    </header>
+
+    <div class="instructionPopup" id="instructionPopup">
+      <h2>How to Play!</h2>
+      <div class="divider" id="divider">
+        <div class="line" id="line"></div>
+      </div>
+      <ul class="insturction" id="instuction">
+        <li><p>W = Rotate</p></li>
+        <li><p>A = Right</p></li>
+        <li><p>D = Left</p></li>
+        <li><p>S = Down</p></li>
+      </ul>
+      <img
+        class="wasd"
+        id="wasd"
+        src="/Pics/wasd.jpg"
+        width="200px"
+        height="auto"
+      />
+      <a href="#" class="closeInstructionPopup">&times;</a>
+      <!-- vet inter riktigt vad &times; innebär-->
+    </div>
+    <div class="grid" id="grid">
+      <h1 id="h1text" class="h1text">Tetris Facts</h1>
+      <div class="horizontalLine" id="horizontalLine"></div>
+      <p id="text" class="text">
+        Tetris has created by the Solivets, or more specifcly a software engineer Alexey Pajitnov 
+        in 1984. It is said that this game is relie on simple roles, intelligence and skills.
+        Moreover, "approximatly 70 million units and 132 million paid mobile game downloads"
+        it was said in the offical wikipedia.
+      </p>
+    </div>
+
+    <canvas
+      class="game-canvas"
+      id="game-canvas"
+      width="300"
+      height="500"
+    ></canvas>
+    <!-- postion:absolute;-->
+    <script src="Main.js"></script>
+    <script src="tetris.js"></script>
+  </body>
+</html>
